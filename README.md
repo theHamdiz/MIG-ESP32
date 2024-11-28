@@ -1,7 +1,6 @@
 **Hamdiz Multi-ID Generator (MIG) 🚀 (ESP32 Version)**
 
 > **Disclaimer**:
-
 Kindly Note that this Documentation has been generated using a LLM!
 I only did this because I am too lazy to write it myself, but it's accurate.
 
