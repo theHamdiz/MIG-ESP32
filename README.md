@@ -1,12 +1,16 @@
-Hamdiz Multi-ID Generator 🚀 (ESP32 Version)
+**Hamdiz Multi-ID Generator (MIG) 🚀 (ESP32 Version)**
 
-Welcome to Hamdiz Multi-ID Generator, a versatile and robust ID generation tool for the ESP32 platform. This project is designed to generate various types of unique IDs with advanced features such as streaming, customizable output destinations, and peripheral validation. 🎉
+> **Disclaimer**: Kindly Note that this Documentation has been generated using a LLM!
+I only did this because I am too lazy to write it myself, but it's accurate.
 
-⚙️ Prerequisites
+Welcome to Hamdiz Multi-ID Generator (MIG), a versatile and robust ID generation tool for the ESP32 platform.
+This project is designed to generate various types of unique IDs with advanced features such as streaming, customizable output destinations, and peripheral validation. 🎉
+
+⚙️ **Prerequisites**
 
 Before using the Hamdiz Multi-ID Generator, ensure you have installed all necessary dependencies and configured your environment correctly:
 
-📚 Required Libraries:
+📚 **Required Libraries**:
 
 	1.	Wire.h: For I2C communication (used for LCD validation or other I2C peripherals).
 	2.	SD.h: For SD card operations.
@@ -15,22 +19,22 @@ Before using the Hamdiz Multi-ID Generator, ensure you have installed all necess
 	5.	HTTPClient.h: For sending HTTP requests to an API.
 	6.	EEPROM.h: For saving and retrieving setup data persistently.
 
-🖧 Baud Rate Configuration:
+🖧 **Baud Rate Configuration**:
 
-	•	Set the Serial Monitor to 921600 baud to ensure proper communication with the ESP32. 🛠️
+	•	Set the Serial Monitor to **921600** baud to ensure proper communication with the ESP32. 🛠️
 
-🛠️ Installation Instructions:
+🛠️ **Installation Instructions**:
 
 	1.	Open the Arduino IDE.
 	2.	Navigate to Sketch > Include Library > Manage Libraries.
 	3.	Search for and install the required libraries listed above if not already installed.
-	4.	Configure your Serial Monitor’s baud rate to 921600.
+	4.	Configure your Serial Monitor’s baud rate to **921600**.
 
 	⚠️ Failing to set up these dependencies or configure the baud rate may result in the project not functioning as expected.
 
-🌟 Features
+🌟 **Features**
 
-Core Features:
+**Core Features**:
 
 	•	Generate Unique IDs:
 	•	Random Integer 🔢
@@ -45,7 +49,7 @@ Core Features:
 	•	Setup Configuration: On first use, configure the output destination (Serial, File, or API). Modify settings anytime using the setup command. ⚙️
 	•	Save and Load Data: Write and retrieve data from an SD card for enhanced data management. 💾
 
-Advanced Features:
+**Advanced Features**:
 
 	1.	Peripheral Validation:
 	•	Automatically checks for connected peripherals (e.g., SD card, LCD). 📟
@@ -63,9 +67,9 @@ Advanced Features:
 	5.	Error Handling:
 	•	Comprehensive and user-friendly error messages for invalid inputs or missing peripherals. 🚨
 
-📝 Commands
+**📝 Commands**
 
-ID Generation:
+**ID Generation**:
 
 	•	int <length>: Generate a random integer with the specified length. 🔢
 	•	uuid v1: Generate a UUID Version 1 (timestamp-based). ⏰
@@ -76,23 +80,23 @@ ID Generation:
 	•	bin <length>: Generate a binary string. 🧮
 	•	custom <set> <length>: Generate a string using a custom character set. 🎨
 
-Data Management:
+**Data Management**:
 
 	•	save <filename>: Save generated output to a file on the SD card. 💾
 	•	read <filename>: Read and display the contents of a file from the SD card. 📖
 
-Streaming:
+**Streaming**:
 
 	•	stream <command> <interval>: Continuously execute a command at a specified interval (in milliseconds). 🔄
 	•	stop stream: Stop the currently active streaming mode. ❌
 
-Setup:
+**Setup**:
 
 	•	setup: Configure the output destination (Serial, File, or API). ⚙️
 
-🔧 Usage
+**🔧 Usage**
 
-First Run:
+**First Run**:
 
 	1.	Setup Configuration:
 	•	Specify the output destination:
@@ -108,19 +112,19 @@ First Run:
 	3.	Streaming Mode:
 	•	Use the stream command to automate ID generation. 🔄
 
-🛠️ Error Handling:
+**🛠️ Error Handling**:
 
 	•	If a required peripheral (e.g., SD card) is missing, a clear warning is displayed. ⚠️
 	•	Invalid commands or inputs are handled gracefully with detailed error messages. 🚨
 
-🔄 Advanced Configuration:
+**🔄 Advanced Configuration**:
 
 Modify the setup anytime using the setup command:
 	•	Change the output destination. ⚙️
 	•	Reconfigure API settings. 🌐
 	•	Update authentication details. 🔑
 
-📌 Project Details
+**📌 Project Details**
 
 	•	Author: Ahmad Hamdi
 	•	Platform: ESP32
@@ -130,7 +134,7 @@ Modify the setup anytime using the setup command:
 	•	WiFi.h and HTTPClient.h (API integration) 🌐
 	•	EEPROM.h (Persistent data storage) 💾
 
-🔍 Example Workflow:
+**🔍 Example Workflow**:
 
 	1.	Generate a UUID v4:
 
@@ -156,7 +160,7 @@ read ids.txt
 
 sendToAPI("https://example.com/api", "{\"id\":\"12345\"}", "bearer", "your-token")
 
-📌 Notes:
+**📌 Notes**:
 
 	•	First Run Setup: Setup must be completed on the first run and can be modified later. 🛠️
 	•	Return to Normal Mode: Use stop stream to exit streaming mode. 🔄
