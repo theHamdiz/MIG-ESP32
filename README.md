@@ -1,6 +1,8 @@
 **Hamdiz Multi-ID Generator (MIG) 🚀 (ESP32 Version)**
 
-> **Disclaimer**: Kindly Note that this Documentation has been generated using a LLM!
+> **Disclaimer**:
+
+Kindly Note that this Documentation has been generated using a LLM!
 I only did this because I am too lazy to write it myself, but it's accurate.
 
 Welcome to Hamdiz Multi-ID Generator (MIG), a versatile and robust ID generation tool for the ESP32 platform.
