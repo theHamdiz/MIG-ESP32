@@ -6,7 +6,7 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-String copyRight = 
+String copyRight =
 " *\n"
 " * Hamdiz Multi-ID Generator\n"
 " * -------------------------\n"
@@ -38,9 +38,10 @@ String copyRight =
 " *    - Example: hex 32\n"
 " *    - Example: hexadecimal 64\n"
 " *\n"
-" * 5. base64 <length>\n"
+" * 5. base64 <length> (or b64 <length>)\n"
 " *    - Generate a random Base64 string with the specified length.\n"
 " *    - Example: base64 16\n"
+" *    - Example: b64 64\n"
 " *\n"
 " * 6. alphanum <length> (or alphanumeric <length>)\n"
 " *    - Generate a random alphanumeric string with the specified length.\n"
@@ -229,7 +230,7 @@ void processCommand(String command, bool streaming) {
     } else if (!streaming) {
       printError("Length must be at least 1.");
     }
-  } else if (command.startsWith("base64 ")) {
+  } else if (command.startsWith("base64 ") || command.startsWith("b64")) {
     int length = command.substring(7).toInt();
     if (length >= 1) {
       if (!streaming) printDecorativeLine("Random Base64");
@@ -269,8 +270,8 @@ void processCommand(String command, bool streaming) {
     readFromFile("output.txt");
   } else if (!streaming) {
     printError("Invalid command.");
-  } 
-} 
+  }
+}
 
 //##########################################//
 //##########################################//
