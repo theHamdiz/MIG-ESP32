@@ -67,12 +67,12 @@ Advanced Features:
 
 ID Generation:
 
-	•	int <length>: Generate a random integer with the specified length.
-	•	uuid v1: Generate a UUID Version 1 (timestamp-based).
-	•	uuid v4: Generate a UUID Version 4 (random).
-	•	hex <length>: Generate a random hexadecimal string.
-	•	base64 <length>: Generate a Base64 string.
-	•	alphanum <length>: Generate an alphanumeric string.
+	•	int <length> (or integer <length>): Generate a random integer with the specified length.
+	•	uuid v1 (or uuid1 <length>) (or u1 <length>): Generate a UUID Version 1 (timestamp-based).
+	•	uuid v4 (or uuid4 <length>) (or u4 <length>): Generate a UUID Version 4 (random).
+	•	hex <length> (or hexadecimal <length>): Generate a random hexadecimal string.
+	•	base64 <length> (or b64 <length>): Generate a Base64 string.
+	•	alphanum <length> (or alphanumeric <length>): Generate an alphanumeric string.
 	•	bin <length>: Generate a binary string.
 	•	custom <set> <length>: Generate a string using a custom character set.
 
@@ -80,6 +80,8 @@ Data Management:
 
 	•	save <filename>: Save generated output to a file on the SD card.
 	•	read: Read and display the contents of the default output.txt file from the SD card.
+
+> Kindly note that reading for now is only supported from the output.txt default file only. if you don't like this behaviour change it and send a pull request and I shall accept it.
 
 Streaming:
 
