@@ -1,4 +1,4 @@
-Hamdiz Multi-ID Generator (MIG) (ESP32 Version)
+Hamdiz Truly Random Multi-ID Generator (MIG) (ESP32 Version)
 
 Welcome to Hamdiz Truly Random Multi-ID Generator (MIG), a versatile and robust ID generation tool for the ESP32 platform. This project is designed to generate various types of unique IDs with advanced features such as streaming, customizable output destinations, and peripheral validation.
 
