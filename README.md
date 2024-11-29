@@ -22,14 +22,14 @@ Before using the Hamdiz Truly Random Multi-ID Generator (`MIG`), ensure you have
 
 🖧 **Baud Rate Configuration**:
 
-	•	Set the Serial Monitor to **921600** baud to ensure proper communication with the ESP32. 🛠️
+	•	Set the Serial Monitor to 921600 baud to ensure proper communication with the ESP32. 🛠️
 
 🛠️ **Installation Instructions**:
 
 	1.	Open the Arduino IDE.
 	2.	Navigate to Sketch > Include Library > Manage Libraries.
 	3.	Search for and install the required libraries listed above if not already installed.
-	4.	Configure your Serial Monitor’s baud rate to **921600**.
+	4.	Configure your Serial Monitor’s baud rate to 921600.
 
 	⚠️ Failing to set up these dependencies or configure the baud rate may result in the project not functioning as expected.
 
